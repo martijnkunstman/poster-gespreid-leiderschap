@@ -33,8 +33,9 @@
 
 .bz-logo {
     display: block;
-    height: 2.5vh;
-    margin-bottom: 0.8vh;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5vh;
 }
 
 /* kritiek en andere visies, onderaan het Buurtzorg-blok */
