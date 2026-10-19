@@ -99,14 +99,15 @@ main {
 #theorie .sectie-inhoud {
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 .theorie-intro {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: minmax(0, 1fr);
     flex: 1;
-    gap: 2vh;
+    gap: 0;
 }
 
 .theorie-links {
@@ -121,7 +122,7 @@ main {
     min-height: 0;
     display: flex;
     flex-direction: column;
-    gap: 1vh;
+    gap: 0;
 }
 
 /* boven en onder elk de helft van de hoogte */
@@ -148,7 +149,7 @@ main {
 .rechts-boven .theorie-tekst {
     flex: 1 1 0;
     min-width: 0;
-    font-size: 0.7vh;
+    font-size: 0.75vh;
     line-height: 1.25;
 }
 
@@ -209,22 +210,22 @@ main {
 }
 
 .portret.groot img {
-    width: 8vh;
-    height: 8vh;
+    width: 6vh;
+    height: 6vh;
 }
 
 .portret.klein img {
-    width: 5vh;
-    height: 5vh;
+    width: 6vh;
+    height: 6vh;
     margin: 0 auto;
 }
 
 
 .theorie-tekst {
     flex: 1;
-    font-size: 0.9vh;
+    font-size: 0.75vh;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.25;
 }
 
 .theorie-tekst p {
@@ -241,10 +242,6 @@ main {
     flex-shrink: 0;
     background-color: #eeeeee;
     display: flex;
-    /* sluit aan op de randen van de sectie (heft padding van .sectie-inhoud op) */
-    margin-left: -2vh;
-    margin-right: -2vh;
-    margin-bottom: -2vh;
 }
 
 .tijdlijn .tijdlijn-as {
@@ -403,4 +400,87 @@ main {
 
 .rechts-boven .theorie-tekst p {
     margin-bottom: 0.3vh;
+}
+
+/* rechts-onder: tekst links, model rechts */
+.rechts-onder {
+    display: flex;
+    gap: 1.5vh;
+    align-items: flex-start;
+}
+
+.rechts-onder .theorie-tekst {
+    flex: 1 1 0;
+    min-width: 0;
+    font-size: 0.75vh;
+    line-height: 1.25;
+}
+
+.rechts-onder .theorie-tekst p {
+    margin-bottom: 0.3vh;
+}
+
+.model {
+    display: block;
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.model-kop {
+    font-size: 4.5px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    fill: #333333;
+}
+
+.model-sub {
+    font-size: 3.2px;
+    font-weight: 400;
+    font-style: italic;
+    fill: #777777;
+}
+
+.model-midden {
+    font-size: 3.6px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    fill: #333333;
+}
+
+/* achtergrondkleuren om de blokken van elkaar te onderscheiden */
+.theorie-links {
+    background-color: #e4edf6; /* zacht blauw: de grondleggers */
+    padding: 1.5vh;
+}
+
+.rechts-boven {
+    background-color: #e5f1e6; /* zacht groen: Illeris */
+    padding: 1.5vh;
+}
+
+.rechts-onder {
+    background-color: #f6eedf; /* zacht zand: model Spillane */
+    padding: 1.5vh;
+}
+
+/* svg's schalen mee binnen de hoogte én breedte van hun blok */
+.rechts-boven,
+.rechts-onder {
+    align-items: stretch;
+}
+
+.rechts-boven .illeris,
+.rechts-onder .model {
+    height: 100%;
+    max-height: 100%;
+    min-height: 0;
+}
+
+/* svg zo breed als zijn hoogte toelaat, tekst vult de rest tot aan de svg */
+.rechts-boven .illeris,
+.rechts-onder .model {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 50%;
+    aspect-ratio: 100 / 95;
 }
