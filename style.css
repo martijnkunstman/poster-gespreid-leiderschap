@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,-50..200;1,17..18,400..700,-50..200&display=swap');
+/* schaaleenheid: 1vh, of kleiner als het scherm te smal is voor de volle posterbreedte (65 eenheden) */
+:root {
+    --u: min(1vh, calc(100vw / 65));
+}
+
 html,
 body {
     margin: 0;
@@ -21,8 +26,8 @@ body {
 main {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 65vh;
+    height: calc(100 * var(--u));
+    width: calc(65 * var(--u));
     background-color: #ffffff;
     position: relative;
     display: flex;
@@ -30,36 +35,36 @@ main {
 }
 
 #titel {
-    font-size: 4.2vh;
+    font-size: calc(4.2 * var(--u));
     font-style: normal;
-    padding: 2vh;
+    padding: calc(2 * var(--u));
     background-color: #34404d;
     color: #f4f0ec;
     display: flex;
     align-items: center;
-    gap: 2vh;
+    gap: calc(2 * var(--u));
     flex-shrink: 0;
 }
 
 #logo {
-    height: 8vh;
+    height: calc(8 * var(--u));
 }
 
 #auteur {
-    margin-left: 1vh;
-    padding-left: 1.5vh;
+    margin-left: calc(1 * var(--u));
+    padding-left: calc(1.5 * var(--u));
     font-style: normal;
     vertical-align: middle;
-    border-left: 0.3vh solid #8c99a8;
-    font-size: 1.4vh;
+    border-left: calc(0.3 * var(--u)) solid #8c99a8;
+    font-size: calc(1.4 * var(--u));
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.2vh;
+    letter-spacing: calc(0.2 * var(--u));
     color: #d9d0c6;
 }
 
 #subtitel {
-    font-size: 2.75vh;
+    font-size: calc(2.75 * var(--u));
     font-style: normal;
     font-style: italic;
     white-space: nowrap;
@@ -73,14 +78,14 @@ main {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    gap: 2vh;
-    padding: 0.6vh 2vh;
+    gap: calc(2 * var(--u));
+    padding: calc(0.6 * var(--u)) calc(2 * var(--u));
     background-color: #6b5d50; /* donkere beigetint */
     color: #f4f0ec;
     font-family: "Google Sans", sans-serif;
     font-style: italic;
     font-weight: 700;
-    font-size: 1.6vh;
+    font-size: calc(1.6 * var(--u));
     white-space: nowrap;
 }
 
@@ -88,7 +93,7 @@ main {
     font-family: "Google Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 0.7vh;
+    font-size: calc(0.7 * var(--u));
     white-space: nowrap;
 }
 
@@ -109,7 +114,7 @@ main {
 .sectie-inhoud {
     flex: 1;
     overflow: hidden;
-    padding: 2vh;
+    padding: calc(2 * var(--u));
 }
 
 #theorie .sectie-inhoud {
@@ -129,7 +134,7 @@ main {
 .theorie-links {
     display: flex;
     flex-direction: column;
-    gap: 1vh;
+    gap: calc(1 * var(--u));
     min-width: 0;
 }
 
@@ -152,7 +157,7 @@ main {
 .rechts-boven {
     display: flex;
     flex-direction: row;
-    gap: 1.5vh;
+    gap: calc(1.5 * var(--u));
     align-items: flex-start;
 }
 
@@ -165,14 +170,14 @@ main {
 .rechts-boven .theorie-tekst {
     flex: 1 1 0;
     min-width: 0;
-    font-size: 0.75vh;
+    font-size: calc(0.75 * var(--u));
     line-height: 1.25;
 }
 
 .illeris {
     display: block;
     width: 100%;
-    margin-bottom: 0.5vh;
+    margin-bottom: calc(0.5 * var(--u));
 }
 
 
@@ -183,7 +188,7 @@ main {
 .persoon {
     display: flex;
     align-items: flex-start;
-    gap: 2vh;
+    gap: calc(2 * var(--u));
 }
 
 .persoon .portret {
@@ -202,26 +207,26 @@ main {
 }
 
 .portret.groot img {
-    width: 7.5vh;
-    height: 7.5vh;
+    width: calc(7.5 * var(--u));
+    height: calc(7.5 * var(--u));
 }
 
 .portret.klein img {
-    width: 6vh;
-    height: 6vh;
+    width: calc(6 * var(--u));
+    height: calc(6 * var(--u));
     margin: 0 auto;
 }
 
 
 .theorie-tekst {
     flex: 1;
-    font-size: 0.75vh;
+    font-size: calc(0.75 * var(--u));
     font-weight: 400;
     line-height: 1.25;
 }
 
 .theorie-tekst p {
-    margin: 0 0 0.5vh 0;
+    margin: 0 0 calc(0.5 * var(--u)) 0;
 }
 
 .theorie-intro {
@@ -239,14 +244,14 @@ main {
 
 .tijdlijn .tijdlijn-as {
     flex: 1;
-    margin: 0.6vh 2vh;
+    margin: calc(0.6 * var(--u)) calc(2 * var(--u));
 }
 
 
 .tijdlijn-as {
     position: relative;
     display: flex;
-    height: 11.4vh;
+    height: calc(11.4 * var(--u));
 }
 
 /* theorie krijgt iets meer hoogte dan de praktijk */
@@ -261,7 +266,7 @@ main {
     left: 0;
     right: 0;
     top: 50%;
-    height: 0.3vh;
+    height: calc(0.3 * var(--u));
     background-color: #e4dcd2;
     transform: translateY(-50%);
 }
@@ -277,11 +282,11 @@ main {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 1vh;
-    height: 1vh;
+    width: calc(1 * var(--u));
+    height: calc(1 * var(--u));
     border-radius: 50%;
     background-color: #e4dcd2;
-    border: 0.2vh solid #6b5d50;
+    border: calc(0.2 * var(--u)) solid #6b5d50;
     box-sizing: border-box;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -292,8 +297,8 @@ main {
     content: '';
     position: absolute;
     left: 50%;
-    width: 0.15vh;
-    height: 0.8vh;
+    width: calc(0.15 * var(--u));
+    height: calc(0.8 * var(--u));
     background-color: #b3a595;
 }
 
@@ -310,18 +315,18 @@ main {
     left: -40%;
     width: 180%;
     text-align: center;
-    font-size: 0.65vh;
+    font-size: calc(0.65 * var(--u));
     font-weight: 400;
     line-height: 1.2;
 }
 
 /* om en om boven en onder de lijn */
 .moment:nth-child(odd) .tekst {
-    bottom: calc(50% + 1vh);
+    bottom: calc(50% + calc(1 * var(--u)));
 }
 
 .moment:nth-child(even) .tekst {
-    top: calc(50% + 1vh);
+    top: calc(50% + calc(1 * var(--u)));
 }
 
 /* eerste en laatste niet buiten de rand laten vallen */
@@ -339,7 +344,7 @@ main {
 }
 
 .jaar {
-    font-size: 0.9vh;
+    font-size: calc(0.9 * var(--u));
     font-weight: 800;
 }
 
@@ -352,17 +357,17 @@ main {
 #bronnen {
     align-self: stretch;
     overflow-wrap: anywhere;
-    font-size: 0.5vh;
-    padding: 1.2vh 2vh;
+    font-size: calc(0.5 * var(--u));
+    padding: calc(1.2 * var(--u)) calc(2 * var(--u));
     background-color: #34404d;
     color: #eeeeee;
     column-count: 5;
-    column-gap: 1vh;
+    column-gap: calc(1 * var(--u));
 }
 
 #bronnen > div {
-    padding-left: 2vh;
-    text-indent: -1vh;
+    padding-left: calc(2 * var(--u));
+    text-indent: -calc(1 * var(--u));
     break-inside: avoid;
 }
 #grid {
@@ -386,7 +391,7 @@ main {
 
 .persoon.omloop .portret {
     float: left;
-    margin: 0 1.5vh 0.5vh 0;
+    margin: 0 calc(1.5 * var(--u)) calc(0.5 * var(--u)) 0;
 }
 
 .persoon.omloop::after {
@@ -396,25 +401,25 @@ main {
 }
 
 .rechts-boven .theorie-tekst p {
-    margin-bottom: 0.3vh;
+    margin-bottom: calc(0.3 * var(--u));
 }
 
 /* rechts-onder: tekst links, model rechts */
 .rechts-onder {
     display: flex;
-    gap: 1.5vh;
+    gap: calc(1.5 * var(--u));
     align-items: flex-start;
 }
 
 .rechts-onder .theorie-tekst {
     flex: 1 1 0;
     min-width: 0;
-    font-size: 0.75vh;
+    font-size: calc(0.75 * var(--u));
     line-height: 1.25;
 }
 
 .rechts-onder .theorie-tekst p {
-    margin-bottom: 0.3vh;
+    margin-bottom: calc(0.3 * var(--u));
 }
 
 .model {
@@ -429,17 +434,17 @@ main {
 /* achtergrondkleuren om de blokken van elkaar te onderscheiden */
 .theorie-links {
     background-color: #f4f0ec; /* lichtste tint: de grondleggers */
-    padding: 1.5vh;
+    padding: calc(1.5 * var(--u));
 }
 
 .rechts-boven {
     background-color: #ece6df; /* middelste tint: Illeris */
-    padding: 1.5vh;
+    padding: calc(1.5 * var(--u));
 }
 
 .rechts-onder {
     background-color: #e4dcd2; /* donkerste tint: model Spillane */
-    padding: 1.5vh;
+    padding: calc(1.5 * var(--u));
 }
 
 /* svg's schalen mee binnen de hoogte én breedte van hun blok */
