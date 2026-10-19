@@ -358,7 +358,7 @@ main {
     align-self: stretch;
     overflow-wrap: anywhere;
     font-size: calc(0.5 * var(--u));
-    padding: calc(1.2 * var(--u)) calc(2 * var(--u));
+    padding: calc(1.2 * var(--u)) calc(1 * var(--u));
     background-color: #34404d;
     color: #eeeeee;
     column-count: 5;
@@ -366,8 +366,8 @@ main {
 }
 
 #bronnen > div {
-    padding-left: calc(2 * var(--u));
-    text-indent: -calc(1 * var(--u));
+    padding-left: calc(1 * var(--u));
+    text-indent: calc(-1 * var(--u));
     break-inside: avoid;
 }
 #grid {
