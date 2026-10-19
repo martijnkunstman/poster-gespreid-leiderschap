@@ -52,16 +52,47 @@
     height: auto;
 }
 
-/* kritiek en andere visies, onderaan het Buurtzorg-blok */
-.kritiek {
-    flex: 0 0 auto;
-    margin-top: auto;
-    background-color: #e4dcd2;
-    padding: 1vh;
+/* kritische blik: eigen band onder theorie en praktijk */
+#kritiek {
+    flex-shrink: 0;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr 1fr 1.1fr 1.4fr;
+    font-size: 0.7vh;
+    font-weight: 400;
+    line-height: 1.2;
+    border-top: 0.3vh solid #34404d;
 }
 
-.kritiek p:last-child {
-    margin-bottom: 0;
+#kritiek .kritiek-kop {
+    background-color: #34404d;
+    color: #f4f0ec;
+    font-size: 1vh;
+    font-weight: 800;
+    line-height: 1.1;
+    padding: 0.6vh 1.2vh;
+}
+
+#kritiek .kritiek-kop .bron {
+    display: block;
+    margin-top: 0.2vh;
+    font-size: 0.6vh;
+    font-weight: 400;
+    color: #b8c3cf;
+}
+
+#kritiek p {
+    margin: 0;
+    padding: 0.6vh 1vh;
+    border-left: 0.1vh solid #cfc3b7;
+}
+
+#kritiek p:nth-of-type(1) {
+    border-left: none;
+}
+
+#kritiek p b {
+    display: block;
+    margin-bottom: 0.2vh;
 }
 
 /* voetbalveld: zelfde schaling als de driehoek van Illeris */
@@ -101,8 +132,4 @@
 .vergelijking td:first-child {
     font-weight: 800;
     white-space: nowrap;
-}
-
-.noot {
-    margin-top: 0.8vh !important;
 }

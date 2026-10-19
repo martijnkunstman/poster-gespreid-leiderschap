@@ -67,6 +67,31 @@ main {
     opacity: 0.8;
 }
 
+/* kernboodschap direct onder de titel */
+#kernzin {
+    flex-shrink: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 2vh;
+    padding: 0.6vh 2vh;
+    background-color: #e4dcd2;
+    color: #34404d;
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.6vh;
+    white-space: nowrap;
+}
+
+#kernzin .kernzin-bron {
+    font-family: "Google Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7vh;
+    white-space: nowrap;
+}
+
 #inhoud {
     flex: 1;
     overflow: hidden;
@@ -214,14 +239,19 @@ main {
 
 .tijdlijn .tijdlijn-as {
     flex: 1;
-    margin: 1vh 2vh;
+    margin: 0.6vh 2vh;
 }
 
 
 .tijdlijn-as {
     position: relative;
     display: flex;
-    height: 12vh;
+    height: 11.4vh;
+}
+
+/* theorie krijgt iets meer hoogte dan de praktijk */
+#theorie {
+    flex: 1.08;
 }
 
 /* horizontale lijn */
@@ -320,12 +350,13 @@ main {
 
 
 #bronnen {
-    align-self: flex-end;
+    align-self: stretch;
+    overflow-wrap: anywhere;
     font-size: 0.5vh;
-    padding: 2vh;
+    padding: 1.2vh 2vh;
     background-color: #34404d;
     color: #eeeeee;
-    column-count: 4;
+    column-count: 5;
     column-gap: 1vh;
 }
 
@@ -431,6 +462,10 @@ main {
     width: auto;
     max-width: 50%;
     aspect-ratio: 100 / 95;
+}
+
+.rechts-onder .model {
+    aspect-ratio: 84 / 80;
 }
 
 .tijdlijn .bron {
