@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,-50..200;1,17..18,400..700,-50..200&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,-50..200;1,17..18,400..700,-50..200&display=swap');
 html,
 body {
     margin: 0;
@@ -77,9 +77,9 @@ main {
     padding: 0.6vh 2vh;
     background-color: #6b5d50; /* donkere beigetint */
     color: #f4f0ec;
-    font-family: "Lora", serif;
+    font-family: "Google Sans", sans-serif;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.6vh;
     white-space: nowrap;
 }
