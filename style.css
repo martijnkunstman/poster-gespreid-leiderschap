@@ -75,8 +75,8 @@ main {
     justify-content: space-between;
     gap: 2vh;
     padding: 0.6vh 2vh;
-    background-color: #e4dcd2;
-    color: #34404d;
+    background-color: #6b5d50; /* donkere beigetint */
+    color: #f4f0ec;
     font-family: "Lora", serif;
     font-style: italic;
     font-weight: 600;
@@ -232,8 +232,8 @@ main {
 .tijdlijn {
     margin-top: auto;
     flex-shrink: 0;
-    background-color: #34404d;
-    color: #eef2f6;
+    background-color: #6b5d50; /* donkere beigetint */
+    color: #f4f0ec;
     display: flex;
 }
 
@@ -262,7 +262,7 @@ main {
     right: 0;
     top: 50%;
     height: 0.3vh;
-    background-color: #dde4ec;
+    background-color: #e4dcd2;
     transform: translateY(-50%);
 }
 
@@ -280,8 +280,8 @@ main {
     width: 1vh;
     height: 1vh;
     border-radius: 50%;
-    background-color: #dde4ec;
-    border: 0.2vh solid #34404d;
+    background-color: #e4dcd2;
+    border: 0.2vh solid #6b5d50;
     box-sizing: border-box;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -294,7 +294,7 @@ main {
     left: 50%;
     width: 0.15vh;
     height: 0.8vh;
-    background-color: #8c99a8;
+    background-color: #b3a595;
 }
 
 .moment:nth-child(odd)::after {
@@ -469,6 +469,11 @@ main {
 }
 
 .tijdlijn .bron {
-    color: #b8c3cf;
+    color: #d9d0c6;
 }
 
+
+#kernzin .bron,
+#kernzin .kernzin-bron {
+    color: #d9d0c6;
+}
