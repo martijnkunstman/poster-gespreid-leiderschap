@@ -7,7 +7,6 @@
     <title>Gespreid leiderschap</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="praktijk.css">
-    <link rel="stylesheet" href="mobile.css">
 </head>
 
 <body>
@@ -290,6 +289,18 @@
                 document.getElementById('grid').classList.toggle('zichtbaar');
             }
         });
+
+        // Op smalle schermen (mobiel) de poster verkleinen tot de volledige breedte past
+        function pasPosterAan() {
+            var poster = document.querySelector('main');
+            poster.style.zoom = '';
+            var schaal = window.innerWidth / poster.offsetWidth;
+            if (schaal < 1) {
+                poster.style.zoom = schaal;
+            }
+        }
+        pasPosterAan();
+        window.addEventListener('resize', pasPosterAan);
     </script>
 </body>
 
