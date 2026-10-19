@@ -51,9 +51,9 @@ main {
     font-style: normal;
     vertical-align: middle;
     border-left: 0.3vh solid #8c99a8;
-    font-size: 1.8vh;
+    font-size: 1.4vh;
     font-weight: 400;
-    font-variant: small-caps;
+    /* font-variant: small-caps; */
     letter-spacing: 0.2vh;
     color: #d9d0c6;
 }
