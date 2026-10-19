@@ -31,11 +31,24 @@
     flex-direction: column;
 }
 
+/* portret van Jos de Blok met het logo ernaast */
+.bz-kop {
+    display: flex;
+    align-items: center;
+    gap: 1.5vh;
+    margin-bottom: 1vh;
+}
+
+.bz-kop .portret {
+    flex-shrink: 0;
+}
+
 .bz-logo {
     display: block;
+    flex: 1;
+    min-width: 0;
     width: 100%;
     height: auto;
-    margin-bottom: 1.5vh;
 }
 
 /* kritiek en andere visies, onderaan het Buurtzorg-blok */
