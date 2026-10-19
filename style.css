@@ -85,7 +85,7 @@ main {
     font-family: "Google Sans", sans-serif;
     font-style: italic;
     font-weight: 700;
-    font-size: calc(1.6 * var(--u));
+    font-size: calc(1.4 * var(--u));
     white-space: nowrap;
 }
 
