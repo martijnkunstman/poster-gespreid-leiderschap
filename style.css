@@ -58,10 +58,6 @@ main {
     color: #d9d0c6;
 }
 
-
-
-
-
 #subtitel {
     font-size: 2.75vh;
     font-style: normal;
@@ -84,19 +80,6 @@ main {
     min-height: 0;
 }
 
-.label {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-align: center;
-    font-size: 1.2vh;
-    line-height: 1;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.3vh;
-    color: #eeeeee;
-    background-color: #4d4034;
-    padding: 1vh 0.6vh;
-}
 
 .sectie-inhoud {
     flex: 1;
@@ -335,9 +318,6 @@ main {
     color: #777777;
 }
 
-#praktijk .label {
-    border-bottom: 0.3vh solid #ffffff;
-}
 
 #bronnen {
     align-self: flex-end;
