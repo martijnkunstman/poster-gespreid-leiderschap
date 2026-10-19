@@ -168,33 +168,9 @@ main {
 }
 
 
-.illeris-hoek {
-    font-size: 4.5px;
-    font-weight: 800;
-    letter-spacing: 0.3px;
-    fill: #333333;
-}
 
-.illeris-sub {
-    font-size: 3.2px;
-    font-weight: 400;
-    font-style: italic;
-    fill: #777777;
-}
 
-.illeris-proces {
-    font-size: 3.2px;
-    font-weight: 400;
-    font-style: italic;
-    fill: #777777;
-}
 
-.illeris-gl {
-    font-size: 3.6px;
-    font-weight: 800;
-    letter-spacing: 0.3px;
-    fill: #eeeeee;
-}
 
 .persoon {
     display: flex;
@@ -436,26 +412,8 @@ main {
     min-width: 0;
 }
 
-.model-kop {
-    font-size: 4.5px;
-    font-weight: 800;
-    letter-spacing: 0.3px;
-    fill: #333333;
-}
 
-.model-sub {
-    font-size: 3.2px;
-    font-weight: 400;
-    font-style: italic;
-    fill: #777777;
-}
 
-.model-midden {
-    font-size: 3.6px;
-    font-weight: 800;
-    letter-spacing: 0.3px;
-    fill: #333333;
-}
 
 /* achtergrondkleuren om de blokken van elkaar te onderscheiden */
 .theorie-links {
