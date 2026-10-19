@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,-50..200;1,17..18,400..700,-50..200&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 65vh;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#titel {
+    font-size: 4.2vh;
+    font-style: normal;
+    padding: 2vh;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+
+#logo {
+    height: 8vh;
+}
+
+#auteur {
+    margin-left: 1vh;
+    padding-left: 1.5vh;
+    font-style: normal;
+    vertical-align: middle;
+    border-left: 0.3vh solid #999999;
+    font-size: 1.8vh;
+    font-weight: 400;
+    font-variant: small-caps;
+    letter-spacing: 0.2vh;
+    color: #555555;
+}
+
+#subtitel {
+    font-size: 2.75vh;
+    font-style: normal;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+#inhoud {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectie {
+    flex: 1;
+    display: flex;
+    min-height: 0;
+}
+
+.label {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    font-size: 1.2vh;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3vh;
+    color: #eeeeee;
+    background-color: #333333;
+    padding: 1vh 0.6vh;
+}
+
+.sectie-inhoud {
+    flex: 1;
+    overflow: hidden;
+    padding: 2vh;
+}
+
+#theorie .sectie-inhoud {
+    display: flex;
+    flex-direction: column;
+}
+
+.theorie-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vh;
+}
+
+.theorie-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    min-width: 0;
+}
+
+.theorie-rechts {
+    min-width: 0;
+}
+
+.illeris {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5vh;
+}
+
+
+.illeris-hoek {
+    font-size: 4.5px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    fill: #333333;
+}
+
+.illeris-sub {
+    font-size: 3.2px;
+    font-weight: 400;
+    font-style: italic;
+    fill: #777777;
+}
+
+.illeris-proces {
+    font-size: 3.2px;
+    font-weight: 400;
+    font-style: italic;
+    fill: #777777;
+}
+
+.illeris-gl {
+    font-size: 3.6px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    fill: #eeeeee;
+}
+
+.persoon {
+    display: flex;
+    align-items: flex-start;
+    gap: 2vh;
+}
+
+.persoon .portret {
+    flex-shrink: 0;
+}
+
+.portret {
+    margin: 0;
+    text-align: center;
+}
+
+.portret img {
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.portret.groot img {
+    width: 8vh;
+    height: 8vh;
+}
+
+.portret.klein img {
+    width: 5vh;
+    height: 5vh;
+    margin: 0 auto;
+}
+
+
+.theorie-tekst {
+    flex: 1;
+    font-size: 0.9vh;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.theorie-tekst p {
+    margin: 0 0 0.5vh 0;
+}
+
+.theorie-intro {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.tijdlijn {
+    margin-top: auto;
+    flex-shrink: 0;
+    background-color: #eeeeee;
+    display: flex;
+    /* sluit aan op de randen van de sectie (heft padding van .sectie-inhoud op) */
+    margin-left: -2vh;
+    margin-right: -2vh;
+    margin-bottom: -2vh;
+}
+
+.tijdlijn .tijdlijn-as {
+    flex: 1;
+    margin: 1vh 2vh;
+}
+
+
+.tijdlijn-as {
+    position: relative;
+    display: flex;
+    height: 12vh;
+}
+
+/* horizontale lijn */
+.tijdlijn-as::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 0.3vh;
+    background-color: #333333;
+    transform: translateY(-50%);
+}
+
+.moment {
+    flex: 1;
+    position: relative;
+}
+
+/* punt op de lijn */
+.moment::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1vh;
+    height: 1vh;
+    border-radius: 50%;
+    background-color: #333333;
+    border: 0.2vh solid #eeeeee;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* verbindingsstreepje tussen punt en tekst */
+.moment::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 0.15vh;
+    height: 0.8vh;
+    background-color: #999999;
+}
+
+.moment:nth-child(odd)::after {
+    bottom: 50%;
+}
+
+.moment:nth-child(even)::after {
+    top: 50%;
+}
+
+.moment .tekst {
+    position: absolute;
+    left: -40%;
+    width: 180%;
+    text-align: center;
+    font-size: 0.65vh;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* om en om boven en onder de lijn */
+.moment:nth-child(odd) .tekst {
+    bottom: calc(50% + 1vh);
+}
+
+.moment:nth-child(even) .tekst {
+    top: calc(50% + 1vh);
+}
+
+/* eerste en laatste niet buiten de rand laten vallen */
+.moment:first-child .tekst {
+    left: 0;
+    width: 140%;
+    text-align: left;
+}
+
+.moment:last-child .tekst {
+    left: auto;
+    right: 0;
+    width: 140%;
+    text-align: right;
+}
+
+.jaar {
+    font-size: 0.9vh;
+    font-weight: 800;
+}
+
+.bron {
+    font-style: italic;
+    color: #777777;
+}
+
+#praktijk .label {
+    border-bottom: 0.3vh solid #ffffff;
+}
+
+#bronnen {
+    align-self: flex-end;
+    font-size: 0.5vh;
+    padding: 2vh;
+    background-color: #eeeeee;
+    column-count: 4;
+    column-gap: 1vh;
+}
+
+#bronnen > div {
+    padding-left: 2vh;
+    text-indent: -1vh;
+    break-inside: avoid;
+}
+#grid {
+    display: none;
+    position: absolute;
+    inset: 0;
+    z-index: 1000;
+    pointer-events: none;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.4) 1px, transparent 1px);
+    background-size: calc(100% / 12) 100%;
+}
+
+#grid.zichtbaar {
+    display: block;
+}
+
+/* tekst loopt door onder de foto */
+.persoon.omloop {
+    display: block;
+}
+
+.persoon.omloop .portret {
+    float: left;
+    margin: 0 1.5vh 0.5vh 0;
+}
+
+.persoon.omloop::after {
+    content: '';
+    display: block;
+    clear: both;
+}
