@@ -33,10 +33,12 @@ main {
     font-size: 4.2vh;
     font-style: normal;
     padding: 2vh;
-    background-color: #eeeeee;
+    background-color: #333333;
+    color: #eeeeee;
     display: flex;
     align-items: center;
     gap: 2vh;
+    flex-shrink: 0;
 }
 
 #logo {
@@ -48,19 +50,24 @@ main {
     padding-left: 1.5vh;
     font-style: normal;
     vertical-align: middle;
-    border-left: 0.3vh solid #999999;
+    border-left: 0.3vh solid #777777;
     font-size: 1.8vh;
     font-weight: 400;
     font-variant: small-caps;
     letter-spacing: 0.2vh;
-    color: #555555;
+    color: #bbbbbb;
 }
+
+
+
+
 
 #subtitel {
     font-size: 2.75vh;
     font-style: normal;
     font-style: italic;
     white-space: nowrap;
+    opacity: 0.8;
 }
 
 #inhoud {
@@ -104,7 +111,7 @@ main {
 
 .theorie-intro {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.2fr 2fr;
     grid-template-rows: minmax(0, 1fr);
     flex: 1;
     gap: 0;
@@ -210,8 +217,8 @@ main {
 }
 
 .portret.groot img {
-    width: 6vh;
-    height: 6vh;
+    width: 7.5vh;
+    height: 7.5vh;
 }
 
 .portret.klein img {
@@ -240,7 +247,8 @@ main {
 .tijdlijn {
     margin-top: auto;
     flex-shrink: 0;
-    background-color: #eeeeee;
+    background-color: #444444;
+    color: #eeeeee;
     display: flex;
 }
 
@@ -264,7 +272,7 @@ main {
     right: 0;
     top: 50%;
     height: 0.3vh;
-    background-color: #333333;
+    background-color: #dddddd;
     transform: translateY(-50%);
 }
 
@@ -282,8 +290,8 @@ main {
     width: 1vh;
     height: 1vh;
     border-radius: 50%;
-    background-color: #333333;
-    border: 0.2vh solid #eeeeee;
+    background-color: #dddddd;
+    border: 0.2vh solid #444444;
     box-sizing: border-box;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -296,7 +304,7 @@ main {
     left: 50%;
     width: 0.15vh;
     height: 0.8vh;
-    background-color: #999999;
+    background-color: #888888;
 }
 
 .moment:nth-child(odd)::after {
@@ -358,7 +366,8 @@ main {
     align-self: flex-end;
     font-size: 0.5vh;
     padding: 2vh;
-    background-color: #eeeeee;
+    background-color: #333333;
+    color: #eeeeee;
     column-count: 4;
     column-gap: 1vh;
 }
@@ -483,4 +492,13 @@ main {
     width: auto;
     max-width: 50%;
     aspect-ratio: 100 / 95;
+}
+
+.tijdlijn .bron {
+    color: #aaaaaa;
+}
+
+/* label valt binnen de tijdlijn */
+.tijdlijn .label {
+    background-color: #444444;
 }
