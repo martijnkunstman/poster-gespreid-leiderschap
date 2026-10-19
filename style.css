@@ -33,8 +33,8 @@ main {
     font-size: 4.2vh;
     font-style: normal;
     padding: 2vh;
-    background-color: #333333;
-    color: #eeeeee;
+    background-color: #34404d;
+    color: #f4f0ec;
     display: flex;
     align-items: center;
     gap: 2vh;
@@ -50,12 +50,12 @@ main {
     padding-left: 1.5vh;
     font-style: normal;
     vertical-align: middle;
-    border-left: 0.3vh solid #777777;
+    border-left: 0.3vh solid #8c99a8;
     font-size: 1.8vh;
     font-weight: 400;
     font-variant: small-caps;
     letter-spacing: 0.2vh;
-    color: #bbbbbb;
+    color: #d9d0c6;
 }
 
 
@@ -67,6 +67,7 @@ main {
     font-style: normal;
     font-style: italic;
     white-space: nowrap;
+    color: #e4dcd2;
     opacity: 0.8;
 }
 
@@ -93,7 +94,7 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.3vh;
     color: #eeeeee;
-    background-color: #333333;
+    background-color: #4d4034;
     padding: 1vh 0.6vh;
 }
 
@@ -247,8 +248,8 @@ main {
 .tijdlijn {
     margin-top: auto;
     flex-shrink: 0;
-    background-color: #444444;
-    color: #eeeeee;
+    background-color: #34404d;
+    color: #eef2f6;
     display: flex;
 }
 
@@ -272,7 +273,7 @@ main {
     right: 0;
     top: 50%;
     height: 0.3vh;
-    background-color: #dddddd;
+    background-color: #dde4ec;
     transform: translateY(-50%);
 }
 
@@ -290,8 +291,8 @@ main {
     width: 1vh;
     height: 1vh;
     border-radius: 50%;
-    background-color: #dddddd;
-    border: 0.2vh solid #444444;
+    background-color: #dde4ec;
+    border: 0.2vh solid #34404d;
     box-sizing: border-box;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -304,7 +305,7 @@ main {
     left: 50%;
     width: 0.15vh;
     height: 0.8vh;
-    background-color: #888888;
+    background-color: #8c99a8;
 }
 
 .moment:nth-child(odd)::after {
@@ -366,7 +367,7 @@ main {
     align-self: flex-end;
     font-size: 0.5vh;
     padding: 2vh;
-    background-color: #333333;
+    background-color: #34404d;
     color: #eeeeee;
     column-count: 4;
     column-gap: 1vh;
@@ -458,17 +459,17 @@ main {
 
 /* achtergrondkleuren om de blokken van elkaar te onderscheiden */
 .theorie-links {
-    background-color: #e4edf6; /* zacht blauw: de grondleggers */
+    background-color: #f4f0ec; /* lichtste tint: de grondleggers */
     padding: 1.5vh;
 }
 
 .rechts-boven {
-    background-color: #e5f1e6; /* zacht groen: Illeris */
+    background-color: #ece6df; /* middelste tint: Illeris */
     padding: 1.5vh;
 }
 
 .rechts-onder {
-    background-color: #f6eedf; /* zacht zand: model Spillane */
+    background-color: #e4dcd2; /* donkerste tint: model Spillane */
     padding: 1.5vh;
 }
 
@@ -495,10 +496,6 @@ main {
 }
 
 .tijdlijn .bron {
-    color: #aaaaaa;
+    color: #b8c3cf;
 }
 
-/* label valt binnen de tijdlijn */
-.tijdlijn .label {
-    background-color: #444444;
-}
