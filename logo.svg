@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <style>
+    /* ==========================================================
+       SET YOUR 3 COLORS HERE:
+       ========================================================== */
+    :root {
+      --line-color: #8c99a8; /* 1. Connecting network lines */
+      --node-color: #e4dcd2; /* 2. Circle background fill   */
+      --icon-color: #34404d; /* 3. Person / avatar icon     */
+    }
+
+    /* Style mappings (with fallback defaults) */
+    .network-lines line {
+      stroke: var(--line-color, #505050);
+      stroke-width: 12;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .node-bg {
+      fill: var(--node-color, #7da0f0);
+    }
+
+    .node-icon {
+      fill: var(--icon-color, #ffffff);
+    }
+  </style>
+
+  <defs>
+    <!-- Reusable User Icon (Head + Shoulders) -->
+    <g id="avatar-icon">
+      <!-- Head -->
+      <circle cx="0" cy="-17" r="22" />
+      <!-- Torso / Shoulders -->
+      <path d="M -20,10 C -12,14 -4,15 0,15 C 4,15 12,14 20,10 C 32,13 42,21 42,33 C 42,43 28,47 0,47 C -28,47 -42,43 -42,33 C -42,21 -32,13 -20,10 Z" />
+    </g>
+
+    <!-- Master Node Template -->
+    <g id="node">
+      <circle class="node-bg" cx="0" cy="0" r="76" fill="#7da0f0" />
+      <use href="#avatar-icon" class="node-icon" fill="#ffffff" />
+    </g>
+  </defs>
+
+  <!-- ========================================================
+       1. NETWORK CONNECTION LINES (Drawn behind nodes)
+       ======================================================== -->
+  <g class="network-lines">
+    <!-- Outer Perimeter (8 lines) -->
+    <line x1="298" y1="163" x2="596" y2="124" />
+    <line x1="596" y1="124" x2="825" y2="312" />
+    <line x1="825" y1="312" x2="867" y2="586" />
+    <line x1="867" y1="586" x2="729" y2="804" />
+    <line x1="729" y1="804" x2="402" y2="852" />
+    <line x1="402" y1="852" x2="176" y2="702" />
+    <line x1="176" y1="702" x2="135" y2="390" />
+    <line x1="135" y1="390" x2="298" y2="163" />
+
+    <!-- Outer to Inner Connections (10 lines) -->
+    <line x1="298" y1="163" x2="362" y2="352" />
+    <line x1="596" y1="124" x2="362" y2="352" />
+    <line x1="596" y1="124" x2="613" y2="378" />
+    <line x1="135" y1="390" x2="387" y2="610" />
+    <line x1="176" y1="702" x2="387" y2="610" />
+    <line x1="825" y1="312" x2="635" y2="586" />
+    <line x1="867" y1="586" x2="635" y2="586" />
+    <line x1="729" y1="804" x2="635" y2="586" />
+    <line x1="402" y1="852" x2="635" y2="586" />
+    <line x1="402" y1="852" x2="387" y2="610" />
+
+    <!-- Inner Core Cross Connections (6 lines) -->
+    <line x1="362" y1="352" x2="613" y2="378" />
+    <line x1="362" y1="352" x2="387" y2="610" />
+    <line x1="362" y1="352" x2="635" y2="586" />
+    <line x1="613" y1="378" x2="387" y2="610" />
+    <line x1="613" y1="378" x2="635" y2="586" />
+    <line x1="387" y1="610" x2="635" y2="586" />
+  </g>
+
+  <!-- ========================================================
+       2. NETWORK NODES (12 Avatar Circles)
+       ======================================================== -->
+  <g class="nodes">
+    <use href="#node" x="298" y="163" />
+    <use href="#node" x="596" y="124" />
+    <use href="#node" x="135" y="390" />
+    <use href="#node" x="176" y="702" />
+    <use href="#node" x="362" y="352" />
+    <use href="#node" x="613" y="378" />
+    <use href="#node" x="825" y="312" />
+    <use href="#node" x="867" y="586" />
+    <use href="#node" x="387" y="610" />
+    <use href="#node" x="635" y="586" />
+    <use href="#node" x="402" y="852" />
+    <use href="#node" x="729" y="804" />
+  </g>
+</svg>
