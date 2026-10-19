@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 95">
     <style>
         text { font-family: "Google Sans", Arial, sans-serif; }
-        .illeris-hoek { font-size: 4.5px; font-weight: 800; letter-spacing: 0.3px; fill: #333333; }
-        .illeris-sub, .illeris-proces { font-size: 3.2px; font-weight: 400; font-style: italic; fill: #777777; }
-        .illeris-gl { font-size: 3.6px; font-weight: 800; letter-spacing: 0.3px; fill: #eeeeee; }
+        .illeris-hoek { font-size: 4.5px; font-weight: 800; letter-spacing: 0.3px; fill: #34404d; }
+        .illeris-sub, .illeris-proces { font-size: 3.2px; font-weight: 400; font-style: italic; fill: #5d6b7a; }
+        .illeris-gl { font-size: 3.6px; font-weight: 800; letter-spacing: 0.3px; fill: #f4f0ec; }
     </style>
     <!-- driehoek -->
-    <polygon points="15,18 85,18 50,78" fill="#f4f0ec" stroke="#333333" stroke-width="0.8" />
+    <polygon points="15,18 85,18 50,78" fill="#f4f0ec" stroke="#34404d" stroke-width="0.8" />
     <!-- interactieproces: individu tegenover omgeving -->
-    <line x1="50" y1="18" x2="50" y2="54" stroke="#999999" stroke-width="0.5"
+    <line x1="50" y1="18" x2="50" y2="54" stroke="#8c99a8" stroke-width="0.5"
         stroke-dasharray="1.5 1" />
     <text x="50" y="24" class="illeris-proces" text-anchor="middle">verwerving</text>
     <!-- hoeken -->
@@ -19,6 +19,6 @@
     <text x="50" y="87" class="illeris-hoek" text-anchor="middle">INTERACTIE</text>
     <text x="50" y="91.5" class="illeris-sub" text-anchor="middle">handelen, communicatie, samenwerking</text>
     <!-- plaats van gespreid leiderschap -->
-    <rect x="19" y="55" width="62" height="8" rx="4" fill="#333333" />
+    <rect x="19" y="55" width="62" height="8" rx="4" fill="#34404d" />
     <text x="50" y="60.3" class="illeris-gl" text-anchor="middle">GESPREID LEIDERSCHAP</text>
 </svg>
