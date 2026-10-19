@@ -1,0 +1,238 @@
+/* Mobiel: de poster wordt een scrollbare pagina met blokken onder elkaar */
+
+@media (max-width: 700px) {
+
+    html,
+    body {
+        display: block;
+        height: auto;
+        background-color: #ffffff;
+    }
+
+    main {
+        height: auto;
+        width: 100%;
+    }
+
+    #titel {
+        font-size: 1.6rem;
+        padding: 16px;
+        gap: 12px;
+    }
+
+    #logo {
+        height: 56px;
+    }
+
+    #subtitel {
+        font-size: 1rem;
+        white-space: normal;
+    }
+
+    #auteur {
+        display: inline-block;
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+
+    #inhoud,
+    .sectie,
+    .sectie-inhoud,
+    .theorie-intro,
+    .praktijk,
+    .praktijk-links,
+    .rechts-boven,
+    .rechts-onder {
+        overflow: visible;
+    }
+
+    /* blokken krijgen de hoogte van hun inhoud */
+    #inhoud,
+    .sectie,
+    .sectie-inhoud,
+    .theorie-intro,
+    .praktijk,
+    .theorie-links,
+    .theorie-rechts,
+    .praktijk-links,
+    .praktijk-rechts,
+    .rechts-boven,
+    .rechts-onder {
+        flex: none;
+        min-height: auto;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .sectie {
+        display: block;
+    }
+
+    /* kolommen onder elkaar */
+    .theorie-intro,
+    .praktijk {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .praktijk-links {
+        order: 0;
+    }
+
+    .theorie-links,
+    .rechts-boven,
+    .rechts-onder,
+    .praktijk-links {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .rechts-boven,
+    .rechts-onder {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* tekst leesbaar */
+    .theorie-tekst,
+    .rechts-boven .theorie-tekst,
+    .rechts-onder .theorie-tekst,
+    .vergelijking {
+        font-size: 1rem;
+        line-height: 1.45;
+    }
+
+    .theorie-tekst p,
+    .rechts-boven .theorie-tekst p,
+    .rechts-onder .theorie-tekst p {
+        margin: 0 0 10px 0;
+    }
+
+    /* figuren op volle breedte */
+    .rechts-boven .illeris,
+    .rechts-onder .model,
+    .rechts-boven .voetbal {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .persoon {
+        gap: 12px;
+    }
+
+    .persoon.omloop .portret {
+        margin: 0 12px 6px 0;
+    }
+
+    .portret.groot img {
+        width: 96px;
+        height: 96px;
+    }
+
+    .portret.klein img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .bz-kop {
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .bz-logo {
+        max-width: 220px;
+    }
+
+    .kritiek {
+        padding: 12px;
+        margin-top: 12px;
+    }
+
+    .vergelijking th,
+    .vergelijking td {
+        padding: 6px 8px;
+    }
+
+    .vergelijking td {
+        border-bottom-width: 1px;
+    }
+
+    .vergelijking td:first-child {
+        white-space: normal;
+    }
+
+    .noot {
+        margin-top: 12px !important;
+    }
+
+    /* tijdlijn verticaal */
+    .tijdlijn .tijdlijn-as {
+        margin: 16px;
+    }
+
+    .tijdlijn-as {
+        flex-direction: column;
+        height: auto;
+        gap: 14px;
+        padding-left: 24px;
+    }
+
+    .tijdlijn-as::before {
+        left: 6px;
+        right: auto;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        height: auto;
+        transform: none;
+    }
+
+    .moment::before {
+        left: -18px;
+        top: 4px;
+        width: 12px;
+        height: 12px;
+        border-width: 2px;
+        transform: none;
+    }
+
+    .moment::after {
+        display: none;
+    }
+
+    .moment .tekst,
+    .moment:nth-child(odd) .tekst,
+    .moment:nth-child(even) .tekst,
+    .moment:first-child .tekst,
+    .moment:last-child .tekst {
+        position: static;
+        width: auto;
+        text-align: left;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .jaar {
+        font-size: 1rem;
+    }
+
+    #bronnen {
+        align-self: stretch;
+        font-size: 0.8rem;
+        line-height: 1.4;
+        padding: 16px;
+        column-count: 1;
+    }
+
+    #bronnen > div {
+        padding-left: 16px;
+        text-indent: -16px;
+        margin-bottom: 8px;
+    }
+}
