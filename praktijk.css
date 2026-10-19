@@ -37,32 +37,16 @@
     margin-bottom: 0.8vh;
 }
 
-/* kerncijfers Buurtzorg */
-.stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.8vh;
+/* kritiek en andere visies, onderaan het Buurtzorg-blok */
+.kritiek {
+    flex: 0 0 auto;
     margin-top: auto;
+    background-color: #e4dcd2;
+    padding: 1vh;
 }
 
-.stat {
-    background-color: #34404d;
-    color: #f4f0ec;
-    padding: 0.8vh;
-    text-align: center;
-}
-
-.stat b {
-    display: block;
-    font-size: 1.6vh;
-    line-height: 1.1;
-}
-
-.stat span {
-    display: block;
-    font-size: 0.6vh;
-    font-weight: 400;
-    line-height: 1.2;
+.kritiek p:last-child {
+    margin-bottom: 0;
 }
 
 /* voetbalveld: zelfde schaling als de driehoek van Illeris */
