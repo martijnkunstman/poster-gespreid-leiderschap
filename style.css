@@ -235,8 +235,9 @@ main {
     line-height: 1.25;
 }
 
+/* overal dezelfde afstand tussen alinea's */
 .theorie-tekst p {
-    margin: 0 0 calc(0.5 * var(--u)) 0;
+    margin: 0 0 calc(0.4 * var(--u)) 0;
 }
 
 .theorie-intro {
@@ -410,10 +411,6 @@ main {
     clear: both;
 }
 
-.rechts-boven .theorie-tekst p {
-    margin-bottom: calc(0.3 * var(--u));
-}
-
 .rechts-onder {
     display: flex;
     gap: calc(1.5 * var(--u));
@@ -425,10 +422,6 @@ main {
     min-width: 0;
     font-size: calc(0.75 * var(--u));
     line-height: 1.25;
-}
-
-.rechts-onder .theorie-tekst p {
-    margin-bottom: calc(0.3 * var(--u));
 }
 
 /* model van Spillane rechts in het onder-blok, tekst loopt eromheen */
