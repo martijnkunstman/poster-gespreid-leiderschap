@@ -431,12 +431,12 @@ main {
     margin-bottom: calc(0.3 * var(--u));
 }
 
-/* model van Spillane links in het onder-blok, tekst loopt eromheen */
+/* model van Spillane rechts in het onder-blok, tekst loopt eromheen */
 .onder .model {
-    float: left;
+    float: right;
     width: calc(8 * var(--u));
     aspect-ratio: 84 / 80;
-    margin: 0 calc(1.5 * var(--u)) calc(0.5 * var(--u)) 0;
+    margin: 0 0 calc(0.5 * var(--u)) calc(1.5 * var(--u));
 }
 
 
