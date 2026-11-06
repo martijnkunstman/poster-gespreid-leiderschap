@@ -479,6 +479,15 @@ main {
     aspect-ratio: 84 / 80;
 }
 
+/* theorie: Illeris rechts van de tekst, model links van de tekst */
+.rechts-boven .illeris {
+    order: 2;
+}
+
+.rechts-onder .model {
+    order: -1;
+}
+
 .tijdlijn .bron {
     color: #d9d0c6;
 }
