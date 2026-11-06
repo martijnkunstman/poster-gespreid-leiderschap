@@ -449,7 +449,7 @@ main {
 }
 
 .rechts-onder {
-    background-color: #e4dcd2; /* donkerste tint: model Spillane */
+    background-color: #dfd6cb; /* donkerste tint: model Spillane */
     padding: calc(1.5 * var(--u));
 }
 
