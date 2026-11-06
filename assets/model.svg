@@ -2,6 +2,7 @@
     <style>
         text { font-family: "Google Sans", Arial, sans-serif; }
         .model-kop { font-size: 4.2px; font-weight: 700; fill: #34404d; }
+        .model-midden { font-size: 5.2px; font-weight: 800; letter-spacing: 0.2px; fill: #f4f0ec; }
         .vlak { fill: #ffffff; fill-opacity: 0.35; }
         .lijn { fill: none; stroke: #34404d; stroke-width: 0.8; }
     </style>
@@ -16,5 +17,7 @@
     <text x="25.5" y="28" class="model-kop" text-anchor="middle">LEIDERS</text>
     <text x="74.5" y="28" class="model-kop" text-anchor="middle">VOLGERS</text>
     <text x="50" y="71" class="model-kop" text-anchor="middle">SITUATIE</text>
-    <text x="50" y="42.5" class="model-kop" text-anchor="middle">PRAKTIJK</text>
+    <!-- praktijk als label, net als gespreid leiderschap in illeris.svg -->
+    <rect x="30" y="37" width="40" height="9.5" rx="3" fill="#34404d" />
+    <text x="50" y="43.6" class="model-midden" text-anchor="middle">PRAKTIJK</text>
 </svg>
