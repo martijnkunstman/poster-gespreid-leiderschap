@@ -130,29 +130,33 @@ main {
 }
 
 .theorie-intro {
-    display: grid;
-    grid-template-columns: 1.2fr 2fr;
-    grid-template-rows: minmax(0, 1fr);
-    flex: 1;
-    gap: 0;
-}
-
-.theorie-links {
     display: flex;
     flex-direction: column;
-    gap: calc(1 * var(--u));
-    min-width: 0;
+    flex: 1;
 }
 
-.theorie-rechts {
+/* twee rijen, elk met een blok links en een blok rechts */
+.theorie-top,
+.theorie-bottom {
+    display: grid;
+    grid-template-columns: 1.7fr 2fr;
+    grid-template-rows: minmax(0, 1fr);
+    flex: 1 1 0;
+    min-height: 0;
+}
+
+/* bovenste rij iets hoger: daar staat meer tekst */
+.theorie-top {
+    flex-grow: 1.2;
+}
+
+.boven,
+.onder {
     min-width: 0;
     min-height: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+    overflow: hidden;
 }
 
-/* boven en onder elk de helft van de hoogte */
 .rechts-boven,
 .rechts-onder {
     flex: 1 1 0;
@@ -410,7 +414,6 @@ main {
     margin-bottom: calc(0.3 * var(--u));
 }
 
-/* rechts-onder: tekst links, model rechts */
 .rechts-onder {
     display: flex;
     gap: calc(1.5 * var(--u));
@@ -428,17 +431,20 @@ main {
     margin-bottom: calc(0.3 * var(--u));
 }
 
-.model {
-    display: block;
-    flex: 1 1 0;
-    min-width: 0;
+/* model van Spillane links in het onder-blok, tekst loopt eromheen */
+.onder .model {
+    float: left;
+    width: calc(8 * var(--u));
+    aspect-ratio: 84 / 80;
+    margin: 0 calc(1.5 * var(--u)) calc(0.5 * var(--u)) 0;
 }
 
 
 
 
 /* achtergrondkleuren om de blokken van elkaar te onderscheiden */
-.theorie-links {
+.boven,
+.onder {
     background-color: #f4f0ec; /* lichtste tint: de grondleggers */
     padding: calc(1.5 * var(--u));
 }
@@ -449,7 +455,7 @@ main {
 }
 
 .rechts-onder {
-    background-color: #dfd6cb; /* donkerste tint: model Spillane */
+    background-color: #dfd6cb; /* donkerste tint: leiderschapspraktijk */
     padding: calc(1.5 * var(--u));
 }
 
@@ -459,33 +465,23 @@ main {
     align-items: stretch;
 }
 
-.rechts-boven .illeris,
-.rechts-onder .model {
+.rechts-boven .illeris {
     height: 100%;
     max-height: 100%;
     min-height: 0;
 }
 
 /* svg zo breed als zijn hoogte toelaat, tekst vult de rest tot aan de svg */
-.rechts-boven .illeris,
-.rechts-onder .model {
+.rechts-boven .illeris {
     flex: 0 0 auto;
     width: auto;
     max-width: 50%;
     aspect-ratio: 100 / 95;
 }
 
-.rechts-onder .model {
-    aspect-ratio: 84 / 80;
-}
-
-/* theorie: Illeris rechts van de tekst, model links van de tekst */
+/* theorie: Illeris rechts van de tekst */
 .rechts-boven .illeris {
     order: 2;
-}
-
-.rechts-onder .model {
-    order: -1;
 }
 
 .tijdlijn .bron {
