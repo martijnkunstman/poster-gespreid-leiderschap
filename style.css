@@ -424,9 +424,9 @@ main {
 /* model van Spillane rechts in de linkerkolom, tekst loopt eromheen */
 .theorie-links .model {
     float: right;
-    width: calc(8 * var(--u));
+    width: calc(10 * var(--u));
     aspect-ratio: 84 / 80;
-    margin: 0 0 calc(0.5 * var(--u)) calc(1.5 * var(--u));
+    margin: calc(1.5 * var(--u)) 0 calc(0.5 * var(--u)) calc(1.5 * var(--u));
 }
 
 
