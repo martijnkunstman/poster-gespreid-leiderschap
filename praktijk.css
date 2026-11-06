@@ -55,8 +55,7 @@
 /* kritische blik: eigen band onder theorie en praktijk */
 #kritiek {
     flex-shrink: 0;
-    display: grid;
-    grid-template-columns: 0.8fr 1fr 1fr 1fr 1.1fr 1.4fr;
+    display: flex; /* breedte per item volgt de lengte van de inhoud */
     font-size: calc(0.7 * var(--u));
     font-weight: 400;
     line-height: 1.2;
@@ -81,6 +80,7 @@
 }
 
 #kritiek p {
+    flex: 1 1 auto;
     margin: 0;
     padding: calc(0.6 * var(--u)) calc(1 * var(--u));
     border-left: calc(0.1 * var(--u)) solid #8a7b6c;
