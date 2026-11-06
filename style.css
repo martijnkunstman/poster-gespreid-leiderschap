@@ -130,31 +130,28 @@ main {
 }
 
 .theorie-intro {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1.6fr 2fr;
+    grid-template-rows: minmax(0, 1fr);
     flex: 1;
 }
 
-/* twee rijen, elk met een blok links en een blok rechts */
-.theorie-top,
-.theorie-bottom {
-    display: grid;
-    grid-template-columns: 1.7fr 2fr;
-    grid-template-rows: minmax(0, 1fr);
-    flex: 1 1 0;
-    min-height: 0;
-}
-
-/* bovenste rij iets hoger: daar staat meer tekst */
-.theorie-top {
-    flex-grow: 1.2;
-}
-
-.boven,
-.onder {
+.theorie-links {
     min-width: 0;
     min-height: 0;
     overflow: hidden;
+}
+
+.theorie-rechts {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 0;
+}
+
+/* Illeris-blok iets hoger: daar staat meer tekst */
+#theorie .rechts-boven {
+    flex-grow: 1.4;
 }
 
 .rechts-boven,
@@ -424,8 +421,8 @@ main {
     line-height: 1.25;
 }
 
-/* model van Spillane rechts in het onder-blok, tekst loopt eromheen */
-.onder .model {
+/* model van Spillane rechts in de linkerkolom, tekst loopt eromheen */
+.theorie-links .model {
     float: right;
     width: calc(8 * var(--u));
     aspect-ratio: 84 / 80;
@@ -436,8 +433,7 @@ main {
 
 
 /* achtergrondkleuren om de blokken van elkaar te onderscheiden */
-.boven,
-.onder {
+.theorie-links {
     background-color: #f4f0ec; /* lichtste tint: de grondleggers */
     padding: calc(1.5 * var(--u));
 }
