@@ -1,17 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="8 6 84 80">
     <style>
         text { font-family: "Google Sans", Arial, sans-serif; }
-        .model-kop { font-size: 4.5px; font-weight: 800; letter-spacing: 0; fill: #34404d; }
-        .model-sub { font-size: 3.9px; font-weight: 400; font-style: italic; fill: #34404d; }
-        .model-midden { font-size: 4.4px; font-weight: 800; letter-spacing: 0.2px; fill: #34404d; }
+        .model-kop { font-size: 4.2px; font-weight: 700; fill: #34404d; }
+        .vlak { fill: #ffffff; fill-opacity: 0.35; }
+        .lijn { fill: none; stroke: #34404d; stroke-width: 0.8; }
     </style>
-    <circle cx="38" cy="35" r="26" fill="#34404d" fill-opacity="0.12" stroke="#34404d" stroke-width="0.8" />
-    <circle cx="62" cy="35" r="26" fill="#34404d" fill-opacity="0.12" stroke="#34404d" stroke-width="0.8" />
-    <circle cx="50" cy="56" r="26" fill="#34404d" fill-opacity="0.12" stroke="#34404d" stroke-width="0.8" />
-    <text x="27" y="25" class="model-kop" text-anchor="middle">LEIDERS</text>
-    <text x="73.5" y="25" class="model-kop" text-anchor="middle">VOLGERS</text>
-    <text x="50" y="68" class="model-kop" text-anchor="middle">SITUATIE</text>
-    <text x="50" y="73.5" class="model-sub" text-anchor="middle">routines en</text>
-    <text x="50" y="78" class="model-sub" text-anchor="middle">hulpmiddelen</text>
-    <text x="50" y="46" class="model-midden" text-anchor="middle">PRAKTIJK</text>
+    <!-- eerst de vlakken, daarna de lijnen, zodat wit de lijnen niet verbleekt -->
+    <circle class="vlak" cx="38" cy="35" r="26" />
+    <circle class="vlak" cx="62" cy="35" r="26" />
+    <circle class="vlak" cx="50" cy="56" r="26" />
+    <circle class="lijn" cx="38" cy="35" r="26" />
+    <circle class="lijn" cx="62" cy="35" r="26" />
+    <circle class="lijn" cx="50" cy="56" r="26" />
+    <!-- elk woord in het eigen deel van de overlap -->
+    <text x="25.5" y="28" class="model-kop" text-anchor="middle">LEIDERS</text>
+    <text x="74.5" y="28" class="model-kop" text-anchor="middle">VOLGERS</text>
+    <text x="50" y="71" class="model-kop" text-anchor="middle">SITUATIE</text>
+    <text x="50" y="42.5" class="model-kop" text-anchor="middle">PRAKTIJK</text>
 </svg>
