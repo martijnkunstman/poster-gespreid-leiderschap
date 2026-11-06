@@ -1,24 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 95">
     <style>
         text { font-family: "Google Sans", Arial, sans-serif; }
-        .illeris-hoek { font-size: 5.4px; font-weight: 800; letter-spacing: 0.2px; fill: #34404d; }
-        .illeris-sub, .illeris-proces { font-size: 3.9px; font-weight: 400; font-style: italic; fill: #34404d; }
-        .illeris-gl { font-size: 4.2px; font-weight: 800; letter-spacing: 0.2px; fill: #f4f0ec; }
+        .illeris-hoek { font-size: 6px; font-weight: 800; letter-spacing: 0.2px; fill: #34404d; }
+        .illeris-gl { font-size: 5.2px; font-weight: 800; letter-spacing: 0.2px; fill: #f4f0ec; }
     </style>
     <!-- driehoek -->
-    <polygon points="15,20 85,20 50,78" fill="#f4f0ec" stroke="#34404d" stroke-width="0.8" />
-    <!-- interactieproces: individu tegenover omgeving -->
-    <line x1="50" y1="20" x2="50" y2="54" stroke="#8c99a8" stroke-width="0.5"
-        stroke-dasharray="1.5 1" />
-    <text x="50" y="27" class="illeris-proces" text-anchor="middle">verwerving</text>
+    <polygon points="8,13 92,13 50,82" fill="#f4f0ec" stroke="#34404d" stroke-width="0.8" />
     <!-- hoeken -->
-    <text x="2" y="9" class="illeris-hoek" text-anchor="start">INHOUD</text>
-    <text x="2" y="14.5" class="illeris-sub" text-anchor="start">kennis, vaardigheden</text>
-    <text x="98" y="9" class="illeris-hoek" text-anchor="end">DRIJFVEER</text>
-    <text x="98" y="14.5" class="illeris-sub" text-anchor="end">motivatie, emotie</text>
-    <text x="50" y="87" class="illeris-hoek" text-anchor="middle">INTERACTIE</text>
-    <text x="50" y="92.5" class="illeris-sub" text-anchor="middle">handelen, communicatie, samenwerking</text>
-    <!-- plaats van gespreid leiderschap -->
-    <rect x="14" y="55" width="72" height="9" rx="4.5" fill="#34404d" />
-    <text x="50" y="61" class="illeris-gl" text-anchor="middle">GESPREID LEIDERSCHAP</text>
+    <text x="2" y="8" class="illeris-hoek" text-anchor="start">INHOUD</text>
+    <text x="98" y="8" class="illeris-hoek" text-anchor="end">DRIJFVEER</text>
+    <text x="50" y="91" class="illeris-hoek" text-anchor="middle">INTERACTIE</text>
+    <!-- plaats van gespreid leiderschap: onder het midden, richting interactie -->
+    <rect x="24" y="43" width="52" height="16" rx="5" fill="#34404d" />
+    <text x="50" y="50" class="illeris-gl" text-anchor="middle">GESPREID</text>
+    <text x="50" y="56" class="illeris-gl" text-anchor="middle">LEIDERSCHAP</text>
 </svg>
