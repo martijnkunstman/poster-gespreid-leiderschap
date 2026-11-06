@@ -79,7 +79,7 @@ main {
     grid-template-columns: 1fr auto 1fr; /* zin precies midden, bron rechts */
     align-items: baseline;
     gap: calc(1 * var(--u));
-    padding: calc(0.6 * var(--u)) calc(2 * var(--u));
+    padding: calc(1 * var(--u)) calc(2 * var(--u));
     background-color: #6b5d50; /* donkere beigetint */
     color: #f4f0ec;
     font-family: "Google Sans", sans-serif;
