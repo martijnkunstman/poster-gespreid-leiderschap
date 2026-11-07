@@ -65,6 +65,11 @@
 }
 
 #kritiek .kritiek-kop {
+    /* kop verticaal gecentreerd en rechts uitgelijnd */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
     color: #f4f0ec;
     font-size: calc(1 * var(--u));
     font-weight: 800;
