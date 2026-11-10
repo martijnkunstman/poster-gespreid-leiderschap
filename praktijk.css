@@ -61,7 +61,7 @@
     line-height: 1.2;
     background-color: #6b5d50; /* donkere beigetint */
     color: #f4f0ec;
-    border-top: calc(0.3 * var(--u)) solid #4f443a;
+    border-top: calc(0.3 * var(--u)) solid #6b5d50;
 }
 
 #kritiek .kritiek-kop {

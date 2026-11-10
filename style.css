@@ -10,7 +10,7 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color: #cccccc;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,6 +373,16 @@ main {
     column-gap: calc(1 * var(--u));
 }
 
+#colofon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: calc(0.3 * var(--u));
+    padding: calc(0.5 * var(--u)) calc(1 * var(--u));
+    background-color: #34404d;
+    color: #eeeeee;
+}
+
 #bronnen > div {
     padding-left: calc(1 * var(--u));
     text-indent: calc(-1 * var(--u));
@@ -476,6 +486,8 @@ main {
 .tijdlijn .bron {
     color: #d9d0c6;
 }
+
+
 
 
 #kernzin .bron,
